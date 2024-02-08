@@ -56,6 +56,10 @@ class SandwichMachine:
     def process_coins(self, cost):
         """Returns the total calculated from coins inserted.
            Hint: include input() function here, e.g. input("how many quarters?: ")"""
+
+        # Declare total variable
+        # While total is less than cost, the user inputs coins and is added to total
+        # Returns total after total is greater than cost
         total = 0
         while total < cost:
             try:
