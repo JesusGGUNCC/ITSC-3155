@@ -92,7 +92,11 @@ class SandwichMachine:
     def make_sandwich(self, sandwich_size, order_ingredients):
         """Deduct the required ingredients from the resources.
            Hint: no output"""
+
+        # Recipe holds ingredients from dictionary
         recipe = recipes[sandwich_size]["ingredients"]
+
+        # Iterate through dictionary with recipe variable and subtract from amount need
         for ingredient, amount in recipe.items():
             self.machine_resources[ingredient] -= amount
 
